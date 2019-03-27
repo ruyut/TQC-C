@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i, j;
+	for (i = 1; i <= 5; i++) {//從一開始，一直到五 共會出現1,2,3,4,5
+		for (j = 0; j<i; j++)//從0開始，一直到i的前一個 
+			printf("*");//列印出*號
+		printf("\n");//換行
+	}
+	system("PAUSE");//停住等待使用者按下任意一個按鍵
+	return 0;//跳出
+}
+	/*
+	第11行 
+	for (j = 0; j<i; j++)
+	i=1 時 0
+	i=2 時 0 1
+	i=3 時 0 1 2
+	i=4 時 0 1 2 3 
+	i=5 時 0 1 2 3 4
+	*/
